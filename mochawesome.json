@@ -1,0 +1,222 @@
+{
+    "stats": {
+        "suites": 2,
+        "tests": 6,
+        "passes": 3,
+        "pending": 1,
+        "failures": 2,
+        "start": "2023-01-29T16:03:27.606Z",
+        "end": "2023-01-29T16:03:28.684Z",
+        "duration": 1078,
+        "testsRegistered": 6,
+        "passPercent": 50,
+        "pendingPercent": 17,
+        "other": 0,
+        "hasOther": false,
+        "skipped": 1,
+        "hasSkipped": true,
+        "passPercentClass": "success",
+        "pendingPercentClass": "danger"
+    },
+    "suites": {
+        "title": "",
+        "suites": [
+            {
+                "title": "Suite 2 (chrome.109_0_5414_120.windows)",
+                "suites": [],
+                "tests": [
+                    {
+                        "title": "Parse data",
+                        "fullTitle": "Parse data",
+                        "timedOut": false,
+                        "duration": 0,
+                        "speed": "fast",
+                        "pass": true,
+                        "fail": false,
+                        "pending": false,
+                        "code": "",
+                        "isRoot": false,
+                        "uuid": "faebf0a3-8174-4270-ad2b-505153e2cd0b",
+                        "parentUUID": "17d3f6af-f962-4024-a2bc-c9a21993cc3f",
+                        "skipped": false,
+                        "isHook": false,
+                        "context": "[{\"title\":\"Session Id\",\"value\":\"711b1781b74c4ece8dc519cdc7c8bed3\"}]",
+                        "state": "passed",
+                        "err": {}
+                    },
+                    {
+                        "title": "Addition",
+                        "fullTitle": "Addition",
+                        "timedOut": false,
+                        "duration": 0,
+                        "speed": "fast",
+                        "pass": false,
+                        "fail": false,
+                        "pending": true,
+                        "code": "",
+                        "isRoot": false,
+                        "uuid": "527a741c-9943-4236-b8d6-baf3e93deb1d",
+                        "parentUUID": "17d3f6af-f962-4024-a2bc-c9a21993cc3f",
+                        "skipped": true,
+                        "isHook": false,
+                        "context": "[{\"title\":\"Session Id\",\"value\":\"711b1781b74c4ece8dc519cdc7c8bed3\"}]",
+                        "state": "skipped",
+                        "err": {}
+                    },
+                    {
+                        "title": "Subtraction",
+                        "fullTitle": "Subtraction",
+                        "timedOut": false,
+                        "duration": 5,
+                        "speed": "fast",
+                        "pass": false,
+                        "fail": true,
+                        "pending": false,
+                        "code": "",
+                        "isRoot": false,
+                        "uuid": "2c57d0f6-2749-4fc2-adbc-6de3250985b8",
+                        "parentUUID": "17d3f6af-f962-4024-a2bc-c9a21993cc3f",
+                        "skipped": false,
+                        "isHook": false,
+                        "context": "[{\"title\":\"Session Id\",\"value\":\"711b1781b74c4ece8dc519cdc7c8bed3\"}]",
+                        "state": "failed",
+                        "err": {
+                            "name": "AssertionError",
+                            "message": "expected -2 to equal 5",
+                            "estack": "AssertionError: expected -2 to equal 5\n    at Context.<anonymous> (C:\\Users\\orhan.demirci\\mocha\\test\\/slack.js:37:24)\n    at Context.executeAsync (C:\\Users\\orhan.demirci\\mocha\\node_modules\\@wdio\\utils\\build\\shim.js:333:27)\n    at Context.testFrameworkFnWrapper (C:\\Users\\orhan.demirci\\mocha\\node_modules\\@wdio\\utils\\build\\test-framework\\testFnWrapper.js:51:32)",
+                            "stack": "AssertionError: expected -2 to equal 5\n    at Context.<anonymous> (C:\\Users\\orhan.demirci\\mocha\\test\\/slack.js:37:24)\n    at Context.executeAsync (C:\\Users\\orhan.demirci\\mocha\\node_modules\\@wdio\\utils\\build\\shim.js:333:27)\n    at Context.testFrameworkFnWrapper (C:\\Users\\orhan.demirci\\mocha\\node_modules\\@wdio\\utils\\build\\test-framework\\testFnWrapper.js:51:32)",
+                            "showDiff": true,
+                            "actual": -2,
+                            "expected": 5
+                        }
+                    }
+                ],
+                "pending": [
+                    "527a741c-9943-4236-b8d6-baf3e93deb1d"
+                ],
+                "root": false,
+                "fullFile": "",
+                "file": "",
+                "passes": [
+                    "faebf0a3-8174-4270-ad2b-505153e2cd0b"
+                ],
+                "failures": [
+                    "2c57d0f6-2749-4fc2-adbc-6de3250985b8"
+                ],
+                "skipped": [
+                    "527a741c-9943-4236-b8d6-baf3e93deb1d"
+                ],
+                "duration": 1011,
+                "_timeout": 0,
+                "uuid": "17d3f6af-f962-4024-a2bc-c9a21993cc3f",
+                "beforeHooks": [],
+                "afterHooks": []
+            },
+            {
+                "title": "Suite 2 (chrome.109_0_5414_120.windows)",
+                "suites": [],
+                "tests": [
+                    {
+                        "title": "Parse data",
+                        "fullTitle": "Parse data",
+                        "timedOut": false,
+                        "duration": 0,
+                        "speed": "fast",
+                        "pass": true,
+                        "fail": false,
+                        "pending": false,
+                        "code": "",
+                        "isRoot": false,
+                        "uuid": "faebf0a3-8174-4270-ad2b-505153e2cd0b",
+                        "parentUUID": "17d3f6af-f962-4024-a2bc-c9a21993cc3f",
+                        "skipped": false,
+                        "isHook": false,
+                        "context": "[{\"title\":\"Session Id\",\"value\":\"711b1781b74c4ece8dc519cdc7c8bed3\"}]",
+                        "state": "passed",
+                        "err": {}
+                    },
+                    {
+                        "title": "Addition",
+                        "fullTitle": "Addition",
+                        "timedOut": false,
+                        "duration": 0,
+                        "speed": "fast",
+                        "pass": false,
+                        "fail": false,
+                        "pending": true,
+                        "code": "",
+                        "isRoot": false,
+                        "uuid": "527a741c-9943-4236-b8d6-baf3e93deb1d",
+                        "parentUUID": "17d3f6af-f962-4024-a2bc-c9a21993cc3f",
+                        "skipped": true,
+                        "isHook": false,
+                        "context": "[{\"title\":\"Session Id\",\"value\":\"711b1781b74c4ece8dc519cdc7c8bed3\"}]",
+                        "state": "skipped",
+                        "err": {}
+                    },
+                    {
+                        "title": "Subtraction",
+                        "fullTitle": "Subtraction",
+                        "timedOut": false,
+                        "duration": 5,
+                        "speed": "fast",
+                        "pass": false,
+                        "fail": true,
+                        "pending": false,
+                        "code": "",
+                        "isRoot": false,
+                        "uuid": "2c57d0f6-2749-4fc2-adbc-6de3250985b8",
+                        "parentUUID": "17d3f6af-f962-4024-a2bc-c9a21993cc3f",
+                        "skipped": false,
+                        "isHook": false,
+                        "context": "[{\"title\":\"Session Id\",\"value\":\"711b1781b74c4ece8dc519cdc7c8bed3\"}]",
+                        "state": "failed",
+                        "err": {
+                            "name": "AssertionError",
+                            "message": "expected -2 to equal 5",
+                            "estack": "AssertionError: expected -2 to equal 5\n    at Context.<anonymous> (C:\\Users\\orhan.demirci\\mocha\\test\\/slack.js:37:24)\n    at Context.executeAsync (C:\\Users\\orhan.demirci\\mocha\\node_modules\\@wdio\\utils\\build\\shim.js:333:27)\n    at Context.testFrameworkFnWrapper (C:\\Users\\orhan.demirci\\mocha\\node_modules\\@wdio\\utils\\build\\test-framework\\testFnWrapper.js:51:32)",
+                            "stack": "AssertionError: expected -2 to equal 5\n    at Context.<anonymous> (C:\\Users\\orhan.demirci\\mocha\\test\\/slack.js:37:24)\n    at Context.executeAsync (C:\\Users\\orhan.demirci\\mocha\\node_modules\\@wdio\\utils\\build\\shim.js:333:27)\n    at Context.testFrameworkFnWrapper (C:\\Users\\orhan.demirci\\mocha\\node_modules\\@wdio\\utils\\build\\test-framework\\testFnWrapper.js:51:32)",
+                            "showDiff": true,
+                            "actual": -2,
+                            "expected": 5
+                        }
+                    }
+                ],
+                "pending": [
+                    "527a741c-9943-4236-b8d6-baf3e93deb1d"
+                ],
+                "root": false,
+                "fullFile": "",
+                "file": "",
+                "passes": [
+                    "faebf0a3-8174-4270-ad2b-505153e2cd0b"
+                ],
+                "failures": [
+                    "2c57d0f6-2749-4fc2-adbc-6de3250985b8"
+                ],
+                "skipped": [
+                    "527a741c-9943-4236-b8d6-baf3e93deb1d"
+                ],
+                "duration": 1011,
+                "_timeout": 0,
+                "uuid": "17d3f6af-f962-4024-a2bc-c9a21993cc3f",
+                "beforeHooks": [],
+                "afterHooks": []
+            }
+        ],
+        "tests": [],
+        "pending": [],
+        "root": true,
+        "fullFile": "",
+        "file": "",
+        "passes": [],
+        "failures": [],
+        "skipped": [],
+        "duration": 0,
+        "_timeout": 0,
+        "uuid": "1f9792a0-5341-4853-b677-0b941c9a54f2",
+        "beforeHooks": [],
+        "afterHooks": []
+    },
+    "copyrightYear": 2023
+}
