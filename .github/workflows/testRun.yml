@@ -34,7 +34,7 @@ jobs:
         with:
           name: Mochawesome Test            # Name of the check run which will be created
           path: od.json    # Path to test results
-          reporter: mochawesome-json
+          reporter: mocha-json
       - name: Upload Reports
         uses: actions/upload-artifact@v3
         if: success() || failure()
