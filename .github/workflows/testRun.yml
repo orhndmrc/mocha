@@ -26,7 +26,7 @@ jobs:
         run: npm install --force
 
       - name: Run All Tests
-        run: npm run test3
+        run: npm run test
 
       - name: Test Report
         uses: dorny/test-reporter@v1
@@ -34,7 +34,7 @@ jobs:
         if: success() || failure()    # run this step even if previous step failed
         with:
           name: Mochawesome Test            # Name of the check run which will be created
-          path: od.json    # Path to test results
+          path: test-results.json    # Path to test results
           reporter: mocha-json
       - name: Upload Reports
         uses: actions/upload-artifact@v3
@@ -42,5 +42,5 @@ jobs:
         with:
           name: test-and-coverage-reports
           path: |
-              od.json
+              test-results.json
               clover.xml
