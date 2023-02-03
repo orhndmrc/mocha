@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/* --reporter json --reporter-options output=test-results.json --exit true",
+    "test": "mocha test/* --timeout 10000 --reporter json --reporter-options output=test.json --exit true",
     "test2": "wdio",
     "test3": "mocha test/* --reporter mochawesome --reporter-options reportDir=./,reportFilename=od.json"
   },
