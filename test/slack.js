@@ -10,11 +10,11 @@ const pass = color.green;
     
 describe('Slack API', () => {
     
-    it('Parse data', async()=>{
+    it('should send see test result in test rail - C3', async()=>{
         await browser.url('https://goggle.com')
     })
 
-    it('Addition', async()=>{
+    it('should work around - C4', async()=>{
         expect(1+1).to.eq(2)
     })
 
