@@ -3,7 +3,7 @@ const fs = require('fs');
 
  let webdriverIOJson
     try {
-        results = JSON.parse(fs.readFileSync('./output/test-results.json').toString());
+        webdriverIOJson = JSON.parse(fs.readFileSync('./output/test-results.json').toString());
     } catch (err) {
         throw new Error(err.message)
 
