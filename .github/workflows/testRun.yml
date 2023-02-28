@@ -29,11 +29,9 @@ jobs:
         run: npm run test2
         
       - name: Python
-      - uses: actions/setup-python@v4
+        uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-      - run: python my_script.py
-        
         
       - name: Convert wdio json to mocha json
         if: always()
