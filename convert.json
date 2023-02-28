@@ -1,0 +1,266 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 12,
+    "passes": 5,
+    "pending": 2,
+    "failures": 5,
+    "start": "2023-02-28T12:18:04.684Z",
+    "end": "2023-02-28T12:18:04.692Z",
+    "duration": 8
+  },
+  "tests": [
+    {
+      "title": "should send see test result in test rail - C3",
+      "fullTitle": "Slack API should send see test result in test rail - C3",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example.js",
+      "duration": 1,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should work around - C4",
+      "fullTitle": "Slack API should work around - C4",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example.js",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 2 to equal 7",
+        "showDiff": true,
+        "actual": "2",
+        "expected": "7",
+        "stack": "AssertionError: expected 2 to equal 7\n    at Context.<anonymous> (test\\example.js:18:24)\n    at processImmediate (internal/timers.js:464:21)"
+      }
+    },
+    {
+      "title": "Subtraction",
+      "fullTitle": "Slack API Subtraction",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example.js",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected -2 to equal 2",
+        "showDiff": true,
+        "actual": "-2",
+        "expected": "2",
+        "stack": "AssertionError: expected -2 to equal 2\n    at Context.<anonymous> (test\\example.js:22:24)\n    at processImmediate (internal/timers.js:464:21)"
+      }
+    },
+    {
+      "title": "Parse data",
+      "fullTitle": "Slack API Suite 2 Parse data",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example.js",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: browser is not defined\n    at Context.<anonymous> (test\\example.js:29:9)\n    at processImmediate (internal/timers.js:464:21)",
+        "message": "browser is not defined"
+      }
+    },
+    {
+      "title": "Addition",
+      "fullTitle": "Slack API Suite 2 Addition",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Subtraction",
+      "fullTitle": "Slack API Suite 2 Subtraction",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example.js",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected -2 to equal 2",
+        "showDiff": true,
+        "actual": "-2",
+        "expected": "2",
+        "stack": "AssertionError: expected -2 to equal 2\n    at Context.<anonymous> (test\\example.js:38:24)\n    at processImmediate (internal/timers.js:464:21)"
+      }
+    },
+    {
+      "title": "should send see test result in test rail - C3",
+      "fullTitle": "Mehmet should send see test result in test rail - C3",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example2.js",
+      "duration": 0,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should work around - C4",
+      "fullTitle": "Mehmet should work around - C4",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example2.js",
+      "duration": 0,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "Subtraction",
+      "fullTitle": "Mehmet Subtraction",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example2.js",
+      "duration": 0,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "Parse data",
+      "fullTitle": "Mehmet Suite 3 Parse data",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example2.js",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: browser is not defined\n    at Context.<anonymous> (test\\example2.js:29:9)\n    at processImmediate (internal/timers.js:464:21)",
+        "message": "browser is not defined"
+      }
+    },
+    {
+      "title": "Addition",
+      "fullTitle": "Mehmet Suite 3 Addition",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example2.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Subtraction",
+      "fullTitle": "Mehmet Suite 3 Subtraction",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example2.js",
+      "duration": 0,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    }
+  ],
+  "pending": [
+    {
+      "title": "Addition",
+      "fullTitle": "Slack API Suite 2 Addition",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Addition",
+      "fullTitle": "Mehmet Suite 3 Addition",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example2.js",
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "failures": [
+    {
+      "title": "should work around - C4",
+      "fullTitle": "Slack API should work around - C4",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example.js",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 2 to equal 7",
+        "showDiff": true,
+        "actual": "2",
+        "expected": "7",
+        "stack": "AssertionError: expected 2 to equal 7\n    at Context.<anonymous> (test\\example.js:18:24)\n    at processImmediate (internal/timers.js:464:21)"
+      }
+    },
+    {
+      "title": "Subtraction",
+      "fullTitle": "Slack API Subtraction",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example.js",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected -2 to equal 2",
+        "showDiff": true,
+        "actual": "-2",
+        "expected": "2",
+        "stack": "AssertionError: expected -2 to equal 2\n    at Context.<anonymous> (test\\example.js:22:24)\n    at processImmediate (internal/timers.js:464:21)"
+      }
+    },
+    {
+      "title": "Parse data",
+      "fullTitle": "Slack API Suite 2 Parse data",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example.js",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: browser is not defined\n    at Context.<anonymous> (test\\example.js:29:9)\n    at processImmediate (internal/timers.js:464:21)",
+        "message": "browser is not defined"
+      }
+    },
+    {
+      "title": "Subtraction",
+      "fullTitle": "Slack API Suite 2 Subtraction",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example.js",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected -2 to equal 2",
+        "showDiff": true,
+        "actual": "-2",
+        "expected": "2",
+        "stack": "AssertionError: expected -2 to equal 2\n    at Context.<anonymous> (test\\example.js:38:24)\n    at processImmediate (internal/timers.js:464:21)"
+      }
+    },
+    {
+      "title": "Parse data",
+      "fullTitle": "Mehmet Suite 3 Parse data",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example2.js",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: browser is not defined\n    at Context.<anonymous> (test\\example2.js:29:9)\n    at processImmediate (internal/timers.js:464:21)",
+        "message": "browser is not defined"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "should send see test result in test rail - C3",
+      "fullTitle": "Slack API should send see test result in test rail - C3",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example.js",
+      "duration": 1,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should send see test result in test rail - C3",
+      "fullTitle": "Mehmet should send see test result in test rail - C3",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example2.js",
+      "duration": 0,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should work around - C4",
+      "fullTitle": "Mehmet should work around - C4",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example2.js",
+      "duration": 0,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "Subtraction",
+      "fullTitle": "Mehmet Subtraction",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example2.js",
+      "duration": 0,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "Subtraction",
+      "fullTitle": "Mehmet Suite 3 Subtraction",
+      "file": "C:\\Users\\orhan.demirci\\mocha\\test\\example2.js",
+      "duration": 0,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    }
+  ]
+}
