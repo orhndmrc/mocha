@@ -31,7 +31,7 @@ jobs:
         run: npm install --force
 
       - name: Run All Tests
-        run: npm run test
+        run: npm run test2
         
       - name: Python
         if: always()
@@ -39,16 +39,16 @@ jobs:
         with:
           python-version: '3.10'
         
-#       - name: Convert wdio json to mocha json
-#         if: always()
-#         run: node converter.js
+      - name: Convert wdio json to mocha json
+        if: always()
+        run: node converter.js
 
       - name: Test Report
         uses: dorny/test-reporter@v1
         if: success() || failure()    # run this step even if previous step failed
         with:
           name: Mocha Tests            # Name of the check run which will be created
-          path: test-results.json    # Path to test results
+          path: convert.json    # Path to test results
           reporter: mocha-json
       - name: Upload Reports
         uses: actions/upload-artifact@v3
@@ -56,5 +56,5 @@ jobs:
         with:
           name: test-and-coverage-reports
           path: |
-              test-results.json
+              convert.json
               clover.xml
