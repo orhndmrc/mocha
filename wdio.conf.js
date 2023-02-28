@@ -28,12 +28,12 @@ exports.config = {
     disableWebdriverStepsReporting: true,
     disableWebdriverScreenshotsReporting: true
   }],
-    ['json', {
-      outputDir: './',
-      outputFileFormat: function () {
-        return `test-results.json`
-      }
-    }], 
+    ['json',{
+    outputDir: './output',
+    outputFileFormat: function(opts) {
+        return `results-${opts.cid}.${opts.capabilities}.json`
+    }
+  }], 
     ['mochawesome',{
       outputDir: './',
       outputFileFormat: function(opts) { 
@@ -64,6 +64,10 @@ exports.config = {
   },
   baseUrl: 'https://demoqa.com/books',
   waitforTimeout: 10000,
+  onComplete: function (exitCode, config, capabilities, results) {
+  const mergeResults = require('wdio-json-reporter/mergeResults')
+  mergeResults('./output', 'results-*', 'test-results.json')
+}
   
 //   onComplete: async function () {
 //    // await browser.pause(5000)
