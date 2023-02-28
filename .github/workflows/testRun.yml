@@ -34,9 +34,9 @@ jobs:
         with:
           python-version: '3.10'
         
-      - name: Convert wdio json to mocha json
-        if: always()
-        run: node converter.js
+#       - name: Convert wdio json to mocha json
+#         if: always()
+#         run: node converter.js
 
       - name: Test Report
         uses: dorny/test-reporter@v1
