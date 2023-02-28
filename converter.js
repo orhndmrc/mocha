@@ -1,6 +1,14 @@
 
-const webdriverIOJson = require('./output/test-results.json')
 const fs = require('fs');
+
+ let webdriverIOJson
+    try {
+        results = JSON.parse(fs.readFileSync('./output/test-results.json').toString());
+    } catch (err) {
+        throw new Error(err.message)
+
+    }
+
 let duration = 0
 let tests = []
 let pending = []
