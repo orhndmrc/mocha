@@ -1,14 +1,11 @@
-
 const fs = require('fs');
+let webdriverIOJson
+try {
+  webdriverIOJson = JSON.parse(fs.readFileSync('./output/test-results.json').toString());
+} catch (err) {
+    throw new Error(err.message)
 
- let webdriverIOJson
-    try {
-        webdriverIOJson = JSON.parse(fs.readFileSync('./output/test-results.json').toString());
-    } catch (err) {
-        throw new Error(err.message)
-
-    }
-
+}
 let duration = 0
 let tests = []
 let pending = []
@@ -57,36 +54,40 @@ for (let suite of webdriverIOJson.suites) {
       }
       passes.push(passObj)
     }
-    if(test.error){
-      testObj =  {
-        "title": test.name,
-        "fullTitle": suite.name+" "+test.name,
-        "file": webdriverIOJson.specs[0],
-        "duration": test.duration,
-        "currentRetry": 0,
-        "speed": "fast",
-        "err": {
-          "message": test.error,
-          "showDiff": true,
-          "actual": "",
-          "expected": "",
-          "stack": test.standardError
+    for (let spec  of webdriverIOJson.specs) {
+      if(test.error){
+        testObj =  {
+          "title": test.name,
+          "fullTitle": suite.name+" "+test.name,
+          "file": spec,
+          "duration": test.duration,
+          "currentRetry": 0,
+          "speed": "fast",
+          "err": {
+            "message": test.error,
+            "showDiff": true,
+            "actual": "",
+            "expected": "",
+            "stack": test.standardError
+          }
         }
+        tests.push(testObj)
       }
-      tests.push(testObj)
-    }
-    else{
-      testObj =  {
-        "title": test.name,
-        "fullTitle": suite.name+" "+test.name,
-        "file": webdriverIOJson.specs[0],
-        "duration": test.duration,
-        "currentRetry": 0,
-        "speed": "fast",
-        "err": {}
+      else{
+        testObj =  {
+          "title": test.name,
+          "fullTitle": suite.name+" "+test.name,
+          "file": spec,
+          "duration": test.duration,
+          "currentRetry": 0,
+          "speed": "fast",
+          "err": {}
+        }
+        tests.push(testObj)
       }
-      tests.push(testObj)
+      
     }
+    
   }
 }
 
