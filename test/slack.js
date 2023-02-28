@@ -11,30 +11,31 @@ const pass = color.green;
 describe('Slack API', () => {
     
     it('should send see test result in test rail - C3', async()=>{
-        await browser.url('https://goggle.com')
+        expect(2*0).to.eq(0)
     })
 
     it('should work around - C4', async()=>{
-        expect(1+1).to.eq(2)
+        expect(1+1).to.eq(7)
     })
 
     it('Subtraction', async()=>{
-        expect(1-3).to.eq(-2)
+        expect(1-3).to.eq(2)
     })
 
     
 describe('Suite 2', () => {
     
     it('Parse data', async()=>{
-        //console.log(testInfo())
+        await browser.url('https://google.com')
+        expect(await browser.getTitle()).to.eq('Google')
     })
 
     it.skip('Addition', async()=>{
-        expect(1+1).to.eq(5)
+        expect(1+1).to.eq(2)
     })
 
     it('Subtraction', async()=>{
-        expect(1-3).to.eq(5)
+        expect(1-3).to.eq(2)
     })
 
 
